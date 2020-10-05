@@ -1,0 +1,29 @@
+<h1>Tipado y mapear respuestas Http a modelos personalizados</h1>
+<hr>
+
+<div class='row'>
+    <div class='col'>
+        <table class='table table-dark'>
+            <thead>
+                <tr>
+                    <th>Avatar</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Nombre Completo</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let usuario of usuarios">
+                    <td>
+                        <img [src]="usuario.avatar" alt="">
+                    </td>
+                    <td>{{usuario.first_name}}</td>
+                    <td>{{usuario.last_name}}</td>
+                    <td>Carlos Mejia Trias</td>
+                    <td>{{usuario.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
